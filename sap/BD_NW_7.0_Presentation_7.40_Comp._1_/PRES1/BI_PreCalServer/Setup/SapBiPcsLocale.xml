@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SapSetup Context="Locale" Version="2">
+    <!-- FolderPathPage -->
+    <String name="SapBiPcsProductName">
+        <En>SAP BW Precalculation Service</En>
+        <De>SAP BW Precalculation Service</De>
+    </String>
+
+    <String name="SapBiPcsProductDescription">
+        <En>Service to precalculate workbooks in SAP BW Broadcaster.</En>
+        <De>Dienst zum Vorberechnen von Arbeitsmappen im SAP BW Broadcaster.</De>
+    </String>
+
+    <String name="SapBiPcsDestDirPrompt">
+        <En>Choose the path to the SAP BW Precalculation Service installation directory</En>
+        <De>W&#228;hlen Sie das SAP BW Precalculation Service Zielverzeichnis aus</De>
+    </String>
+
+    <String name="DscrSapBiPcsDestDir">
+        <En>SAP BW Precalculation Service installation directory</En>
+        <De>SAP BW Precalculation Service Installationsverzeichnis</De>
+    </String>
+
+    <String name="SapBiPcsFailedCondition">
+        <En>At least one of the following installation pre-requisites are not fulfilled: &lt;ul&gt;&lt;li&gt;&lt;a style=&quot;COLOR:red&quot;&gt;Business Explorer 7.10 must be installed first.&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a style=&quot;COLOR:red&quot;&gt;The old version of SAP BW Precalculation Service must be uninstalled.&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</En>
+        <De>Mindestens eine der folgenden Vorbedingungen ist nicht erf&#252;llt: &lt;ul&gt;&lt;li&gt;&lt;a style=&quot;COLOR:red&quot;&gt;Business Explorer 7.10 muss zuerst installiert werden.&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a style=&quot;COLOR:red&quot;&gt;Die alte Version des SAP BW Precalculation Service muss deinstalliert werden.&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</De>
+    </String>
+</SapSetup>

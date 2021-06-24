@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="SAPExcelWorkbook.dll" version="3.0.3.14224" publicKeyToken="1bb7125f5714a695" language="neutral" processorArchitecture="msil" type="win32" />
+  <description xmlns="urn:schemas-microsoft-com:asm.v1">SAP Interactive Excel, version 3.0</description>
+  <application />
+  <entryPoint>
+    <co.v1:customHostSpecified />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="ADODB" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualStudio.Tools.Applications.Runtime" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Common.v4.0.Utilities.dll" size="32664">
+      <assemblyIdentity name="Microsoft.Office.Tools.Common.v4.0.Utilities" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>CtnCtseaMyfROIGe0ENdGO6arHg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Office.Tools.Excel.v4.0.Utilities.dll" size="236952">
+      <assemblyIdentity name="Microsoft.Office.Tools.Excel.v4.0.Utilities" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>z3U61dJ85kEXnaWO4zChIMDZm9M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAPConsAccess.dll" size="198144">
+      <assemblyIdentity name="SAPConsAccess" version="3.0.3.14224" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>7smdCbg5iRWFa3HiEmpAeqlkGhA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAPConsBase.dll" size="114176">
+      <assemblyIdentity name="SAPConsBase" version="3.0.3.14224" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>aucFBQa5dLgqS93XZ5PPno2Qop0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAPConsR3.dll" size="78336">
+      <assemblyIdentity name="SAPConsR3" version="3.0.3.14224" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>zrszlYcWwJmOYgTPA8ACWZfDWRU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SAPExcelWorkbook.dll" size="1194496">
+      <assemblyIdentity name="SAPExcelWorkbook" version="3.0.3.14224" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>oFTPzjpUAXjWtmhUUwkxBGV+Osk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <vstav3:addIn xmlns:vstav3="urn:schemas-microsoft-com:vsta.v3">
+    <vstav3:entryPointsCollection>
+      <vstav3:entryPoints>
+        <vstav3:entryPoint class="SAPExcelWorkbook.ThisWorkbook">
+          <assemblyIdentity name="SAPExcelWorkbook" version="3.0.3.14224" language="neutral" processorArchitecture="msil" />
+        </vstav3:entryPoint>
+        <vstav3:entryPoint class="SAPExcelWorkbook.SAPSheet">
+          <assemblyIdentity name="SAPExcelWorkbook" version="3.0.3.14224" language="neutral" processorArchitecture="msil" />
+        </vstav3:entryPoint>
+      </vstav3:entryPoints>
+    </vstav3:entryPointsCollection>
+    <vstav3:update enabled="true">
+      <vstav3:expiration maximumAge="7" unit="days" />
+    </vstav3:update>
+    <vstav3:application>
+      <vstov4:customizations xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">
+        <vstov4:customization>
+          <vstov4:document solutionId="36c5fe52-6afd-4508-9848-8732ccf3085d">
+            <vstov4.1:ribbonTypes xmlns:vstov4.1="urn:schemas-microsoft-com:vsto.v4.1">
+              <vstov4.1:ribbonType name="SAPExcelWorkbook.SAPRibbon, SAPExcelWorkbook, Version=3.0.3.14224, Culture=neutral, PublicKeyToken=null" />
+            </vstov4.1:ribbonTypes>
+          </vstov4:document>
+        </vstov4:customization>
+      </vstov4:customizations>
+    </vstav3:application>
+  </vstav3:addIn>
+<publisherIdentity name="CN=SAP AG, OU=Digital ID Class 3 - Microsoft Software Validation v2, OU=SAP Production CSA2014, O=SAP AG, L=Walldorf/Baden, S=Baden-Wuerttemberg, C=DE" issuerKeyHash="cf99a9ea7b26f44bc98e8fd7f00526efe3d2a79d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>LY8oCEm7630KmdEldpDp+RGDzPo=</DigestValue></Reference></SignedInfo><SignatureValue>Jb1MIFHYQGMwg/pBk8jdc2etCFh/v8bXyowkKs3jkJX8TPZa4xWs8hz/moo+N51rCEmGGJykTeh6q5Q9wlsFB6Zn0P+bCug1Z42IheoWN+DR2gQzs3d6tA1Mp9xbvG1Ei5y6gwZU9lFwI1vxg4+vhpx+cMEXm4zsf1NZO+Ig40s6WRf+ckSNkuoLE27B1fH5F2UcQFkhpEWdStgYS2CPABCuUEYs81o9XI8vxo8fKfeSvPLh47Mmf3ax7Smt9MJ0+5DQn4R6d5WFEjvRG/L6nUTcjrJ5fSqCGpvY8AhuHJGEJu8FlVkA512VNKGt22PYMk6NV0np03/eLJ6EWcnOPw==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>t1MZF+gRIgcbzsEu0wRKLCe8M7j7lwCb95OF0JQjqVhxNHmx1tZqanC7TVVtkOD3ryociJUbKzM2oKtvNrtDKr+TFtDPDYA07Ac5BRXGqgdWUmAJZbLr12jCiQ5yvrBYGc9uYIAYl0OrGkV24NpyLIu+IWoQuVYb06zH3AX4ZccEfexAIn+PTGASX4VmcBELuIHamwqn8XuM2vGxyL9B2fPJopvwQLij8WaQlxmuo/PePGFuGfqI/DePm3vYr1LKWdUPdB8xnK2LS5Pq29L7dYI+TNweG308YxITJVrcK/x8iWq4epxXkCJ3Hg6WooJ7+2204qWVs9cI1wGT4KdEsQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="facc8311f9e9907625d1990a7debbb4908288f2d" Description="" Url=""><as:assemblyIdentity name="SAPExcelWorkbook.dll" version="3.0.3.14224" publicKeyToken="1bb7125f5714a695" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SAP AG, OU=Digital ID Class 3 - Microsoft Software Validation v2, OU=SAP Production CSA2014, O=SAP AG, L=Walldorf/Baden, S=Baden-Wuerttemberg, C=DE</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>ZaVnUd5x1kcOPJug40wAz6ImSzs=</DigestValue></Reference></SignedInfo><SignatureValue>EazPtsWl29NP0v/Z0sVTN4NvvdZam4zG4uXjolW5xy5y9leGRaGCRAHeRIh7uZG09QiompCIgK0aDjPacZ/6zs66XVYPKcuvlPbOMD2An4NQ24wIR7FKmED7DYAFwL3uOmuGO2gr/w/7F5GIg9q1Tiy5AKGiXTl2lFH43GKjDrR5oYXG8ndPi2S92WbKy4qauBaHISLHp8MrbUPfmh7pzdlyj+pKcoTINybbU9AR+X6drLyidBRcbDHE3jQt6kEGPZsDuraRme9h4IUrUYRWXnxunIYvlWCggtkYTP2b50j9cd/QFavRg1d5KhS/pBG08pCOE2hFX8erKMMXiQV3gg==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>t1MZF+gRIgcbzsEu0wRKLCe8M7j7lwCb95OF0JQjqVhxNHmx1tZqanC7TVVtkOD3ryociJUbKzM2oKtvNrtDKr+TFtDPDYA07Ac5BRXGqgdWUmAJZbLr12jCiQ5yvrBYGc9uYIAYl0OrGkV24NpyLIu+IWoQuVYb06zH3AX4ZccEfexAIn+PTGASX4VmcBELuIHamwqn8XuM2vGxyL9B2fPJopvwQLij8WaQlxmuo/PePGFuGfqI/DePm3vYr1LKWdUPdB8xnK2LS5Pq29L7dYI+TNweG308YxITJVrcK/x8iWq4epxXkCJ3Hg6WooJ7+2204qWVs9cI1wGT4KdEsQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIFgzCCBGugAwIBAgIQHBCWFj0y7Vdlb87jPxAmsjANBgkqhkiG9w0BAQUFADCBtDELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQLExZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTswOQYDVQQLEzJUZXJtcyBvZiB1c2UgYXQgaHR0cHM6Ly93d3cudmVyaXNpZ24uY29tL3JwYSAoYykxMDEuMCwGA1UEAxMlVmVyaVNpZ24gQ2xhc3MgMyBDb2RlIFNpZ25pbmcgMjAxMCBDQTAeFw0xNDAyMTEwMDAwMDBaFw0xNjAyMTIyMzU5NTlaMIHGMQswCQYDVQQGEwJERTEbMBkGA1UECBMSQmFkZW4tV3VlcnR0ZW1iZXJnMRcwFQYDVQQHEw5XYWxsZG9yZi9CYWRlbjEPMA0GA1UEChQGU0FQIEFHMR8wHQYDVQQLFBZTQVAgUHJvZHVjdGlvbiBDU0EyMDE0MT4wPAYDVQQLEzVEaWdpdGFsIElEIENsYXNzIDMgLSBNaWNyb3NvZnQgU29mdHdhcmUgVmFsaWRhdGlvbiB2MjEPMA0GA1UEAxQGU0FQIEFHMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt1MZF+gRIgcbzsEu0wRKLCe8M7j7lwCb95OF0JQjqVhxNHmx1tZqanC7TVVtkOD3ryociJUbKzM2oKtvNrtDKr+TFtDPDYA07Ac5BRXGqgdWUmAJZbLr12jCiQ5yvrBYGc9uYIAYl0OrGkV24NpyLIu+IWoQuVYb06zH3AX4ZccEfexAIn+PTGASX4VmcBELuIHamwqn8XuM2vGxyL9B2fPJopvwQLij8WaQlxmuo/PePGFuGfqI/DePm3vYr1LKWdUPdB8xnK2LS5Pq29L7dYI+TNweG308YxITJVrcK/x8iWq4epxXkCJ3Hg6WooJ7+2204qWVs9cI1wGT4KdEsQIDAQABo4IBezCCAXcwCQYDVR0TBAIwADAOBgNVHQ8BAf8EBAMCB4AwEwYDVR0lBAwwCgYIKwYBBQUHAwMwRAYDVR0gBD0wOzA5BgtghkgBhvhFAQcXAzAqMCgGCCsGAQUFBwIBFhxodHRwczovL3d3dy52ZXJpc2lnbi5jb20vY3BzMB8GA1UdIwQYMBaAFM+Zqep7JvRLyY6P1/AFJu/j0qedMEAGA1UdHwQ5MDcwNaAzoDGGL2h0dHA6Ly9jc2MzLTIwMTAtY3JsLnZlcmlzaWduLmNvbS9DU0MzLTIwMTAuY3JsMHEGCCsGAQUFBwEBBGUwYzAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AudmVyaXNpZ24uY29tMDsGCCsGAQUFBzAChi9odHRwOi8vY3NjMy0yMDEwLWFpYS52ZXJpc2lnbi5jb20vQ1NDMy0yMDEwLmNlcjARBglghkgBhvhCAQEEBAMCBBAwFgYKKwYBBAGCNwIBGwQIMAYBAQABAf8wDQYJKoZIhvcNAQEFBQADggEBAJEwJl4QrZRHI3XzUf89ld8NYIRhQt2kWAX7UrXgUTBas8QOqF2edn855CG5qz+7jWZlhDH8nZX/+9c8F+PXIZuoBaf3bIXFFTyODjXeV0BVPLYVQRWpId7CBO++gHePMsZEGsWmw7TuEV3KYCQU1KiDJR73zeqdfmv/nvIb67xwhvma4atjBSc126nPHveP6HGkkMcZ2nzMHM16Af6+uRR2VUH0Hwb2mejKswOA44WbJLRHgfSXScsu6ru9hiRToFGYZ52fmXLM5gXQP6VZkIvvFb//b73X+2QUXC4/4eY6r3nhhOCbZl/BxiyUPuOr+FCJTPNo6cXwUE0UM370Gmg=</X509Certificate><X509Certificate>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</X509Certificate><X509Certificate>MIIE0DCCBDmgAwIBAgIQJQzo4DBhLp8rifcFTXz4/TANBgkqhkiG9w0BAQUFADBfMQswCQYDVQQGEwJVUzEXMBUGA1UEChMOVmVyaVNpZ24sIEluYy4xNzA1BgNVBAsTLkNsYXNzIDMgUHVibGljIFByaW1hcnkgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMDYxMTA4MDAwMDAwWhcNMjExMTA3MjM1OTU5WjCByjELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQLExZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTowOAYDVQQLEzEoYykgMjAwNiBWZXJpU2lnbiwgSW5jLiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MUUwQwYDVQQDEzxWZXJpU2lnbiBDbGFzcyAzIFB1YmxpYyBQcmltYXJ5IENlcnRpZmljYXRpb24gQXV0aG9yaXR5IC0gRzUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCvJAgIKXo1nmAMqudLO07cfLw8RRy7K+D+KQL5VwijZIUVJ/XxrcgxiV0i6CqqpkKzj/i5Vbext0uz/o9+B1fs70PbZmIVYc9gDaTY3vjgw2IIPVQT60nKWVSFJuUrjxuf6/WhkcIzSdhDY2pSS9KP6HBRTdGJaXvHcPaz3BJ023tdS1bTlr8Vd6Gw9KIl8q8ckmcY5fQGBO+QueQA5N06tRn/Arr0PO7gi+s3i+z016zy9vA9r911kTMZHRxAy3QkGSGT2RT+rCpSx4/VBEnkjWNHiDxpg8v+R70rfk/Fla4OndTRQ8Bnc+MUCH7lP59zuDMKz10/NIeWiu5T6CUVAgMBAAGjggGbMIIBlzAPBgNVHRMBAf8EBTADAQH/MDEGA1UdHwQqMCgwJqAkoCKGIGh0dHA6Ly9jcmwudmVyaXNpZ24uY29tL3BjYTMuY3JsMA4GA1UdDwEB/wQEAwIBBjA9BgNVHSAENjA0MDIGBFUdIAAwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly93d3cudmVyaXNpZ24uY29tL2NwczAdBgNVHQ4EFgQUf9Nlp8Ld7LvwMAnzQzn6Aq8zMTMwbQYIKwYBBQUHAQwEYTBfoV2gWzBZMFcwVRYJaW1hZ2UvZ2lmMCEwHzAHBgUrDgMCGgQUj+XTGoasjY5rw8+AatRIGCx7GS4wJRYjaHR0cDovL2xvZ28udmVyaXNpZ24uY29tL3ZzbG9nby5naWYwNAYIKwYBBQUHAQEEKDAmMCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC52ZXJpc2lnbi5jb20wPgYDVR0lBDcwNQYIKwYBBQUHAwEGCCsGAQUFBwMCBggrBgEFBQcDAwYJYIZIAYb4QgQBBgpghkgBhvhFAQgBMA0GCSqGSIb3DQEBBQUAA4GBABMC3fjohgDyWvj4IAxZiGIHzs73Tvm7WaGY5eE43U68ZhjTresY8g3JbT5KlCDDPLq9ZVTGr0SzEK0saz6r1we2uIFjxfleLuUqZ87NMwwq14lWAyMfs77oOghZtOxFNfeKW/9mz1Cvxm1XjRl4t7mi0VfqH5pLr7rJjhJ+xr3/</X509Certificate></X509Data></KeyInfo><Object><as:Timestamp>MIIL0wYJKoZIhvcNAQcCoIILxDCCC8ACAQExCzAJBgUrDgMCGgUAMIIBEwYJKoZI
+hvcNAQcBoIIBBASCAQARrM+2xaXb00/S/9nSxVM3g2+91lqbjMbi5eOiVbnHLnL2
+V4ZFoYJEAd5EiHu5kbT1CKiakIiArRoOM9pxn/rOzrpdVg8py6+U9s4wPYCfg1Db
+jAhHsUqYQPsNgAXAve46a4Y7aCv/D/sXkYiD2rVOLLkAoaJdOXaUUfjcYqMOtHmh
+hcbyd0+LZL3ZZsrLipq4FochIsenwyttQ9+aHunN2XKP6kpyhMg3JttT0BH5fp2s
+vKJ0FFxsMcTeNC3qQQY9mwO6tpGZ72HghStRhFZefG6chi+VYKCC2RhM/ZvnSP1x
+39AVq9GDV3kqFL+kEbTykI4TaEVfx6sowxeJBXeCoIIImTCCA+4wggNXoAMCAQIC
+EH6T6/t8xk5Z6kuad9QG/DswDQYJKoZIhvcNAQEFBQAwgYsxCzAJBgNVBAYTAlpB
+MRUwEwYDVQQIEwxXZXN0ZXJuIENhcGUxFDASBgNVBAcTC0R1cmJhbnZpbGxlMQ8w
+DQYDVQQKEwZUaGF3dGUxHTAbBgNVBAsTFFRoYXd0ZSBDZXJ0aWZpY2F0aW9uMR8w
+HQYDVQQDExZUaGF3dGUgVGltZXN0YW1waW5nIENBMB4XDTEyMTIyMTAwMDAwMFoX
+DTIwMTIzMDIzNTk1OVowXjELMAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVj
+IENvcnBvcmF0aW9uMTAwLgYDVQQDEydTeW1hbnRlYyBUaW1lIFN0YW1waW5nIFNl
+cnZpY2VzIENBIC0gRzIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCx
+rLNJVEuXHBIK2CV5kSJXKm/cuCbEQ3Nrwr8uUFr7FMJ2jkMBJUO0oeJF9Oi3e8N0
+zCLXtJQAAvdN7b+0t0Qka81fRTvRRM5DEnMXgotptCvLmR6schsmTXEfsTHd+1Fh
+AlOmqvVJLAV4RaUvic7nmef+jOJXPz3GktxK+Hsz5HkK+/B1iEGc/8UDUZmq12yf
+k2mHZSmDhcJgFMTIyTsU2sCB8B8NdN6SIqvK9/t0fCfm90obf6fDni2uiuqm5qon
+Fn1h95hxEbziUKFL5V365Q6nLJ+qZSDT2JboyHylTkhE/xniRAeSC9dohIBdanhk
+Rc1gRn5UwRN8xXnxycFxAgMBAAGjgfowgfcwHQYDVR0OBBYEFF+a9W5czMx0mtTd
+fe8/2+xMgC7dMDIGCCsGAQUFBwEBBCYwJDAiBggrBgEFBQcwAYYWaHR0cDovL29j
+c3AudGhhd3RlLmNvbTASBgNVHRMBAf8ECDAGAQH/AgEAMD8GA1UdHwQ4MDYwNKAy
+oDCGLmh0dHA6Ly9jcmwudGhhd3RlLmNvbS9UaGF3dGVUaW1lc3RhbXBpbmdDQS5j
+cmwwEwYDVR0lBAwwCgYIKwYBBQUHAwgwDgYDVR0PAQH/BAQDAgEGMCgGA1UdEQQh
+MB+kHTAbMRkwFwYDVQQDExBUaW1lU3RhbXAtMjA0OC0xMA0GCSqGSIb3DQEBBQUA
+A4GBAAMJm495739ZMKrvaLX64wkdu0+CBl03X6ZSnxaN6hySCURu9W3rWHww6Plp
+jSNzCxJvR6muORH4KrGbsBrDjutZlgCtzgxNstAxpghcKnr84nodV0yoZRjpeUBi
+JZZux8c3aoMhCI5B6t3ZVz8dd0mHKhYGXqY4aiISo1EZg362MIIEozCCA4ugAwIB
+AgIQDs/0OMj+vzVuBNhqmBsaUDANBgkqhkiG9w0BAQUFADBeMQswCQYDVQQGEwJV
+UzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xMDAuBgNVBAMTJ1N5bWFu
+dGVjIFRpbWUgU3RhbXBpbmcgU2VydmljZXMgQ0EgLSBHMjAeFw0xMjEwMTgwMDAw
+MDBaFw0yMDEyMjkyMzU5NTlaMGIxCzAJBgNVBAYTAlVTMR0wGwYDVQQKExRTeW1h
+bnRlYyBDb3Jwb3JhdGlvbjE0MDIGA1UEAxMrU3ltYW50ZWMgVGltZSBTdGFtcGlu
+ZyBTZXJ2aWNlcyBTaWduZXIgLSBHNDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+AQoCggEBAKJjCzlEuLsjp0RJuw7/ofBhClOTsJjbrSwPSsVu/4Y8U1UPFc4EPyv9
+qZaW2b5heQtbyUyGduXgQ0sile7CK0PBn9hotI5AT+6FOLkRxSPyZFjwFTJvTleh
+roikAtcqHs1L4d1j1ReJMluwXplaqJ0oUA4X7pbbYTtFUR3PElYLkkf8q672Zj1H
+rHBy55LnX80QucSDZJQZvSWA4ejSIqXQugJ6oXeTW2XD7hd0vEGGKtwITIySjJEt
+nndEH2jWqHR32w5bMotWizO92WPISZ06xcXqMwvS8aMb9Iu+2bNXizveBKd6IrIk
+ri7HcMW+ToMmCPsLvalPmQjhEChyqs0CAwEAAaOCAVcwggFTMAwGA1UdEwEB/wQC
+MAAwFgYDVR0lAQH/BAwwCgYIKwYBBQUHAwgwDgYDVR0PAQH/BAQDAgeAMHMGCCsG
+AQUFBwEBBGcwZTAqBggrBgEFBQcwAYYeaHR0cDovL3RzLW9jc3Aud3Muc3ltYW50
+ZWMuY29tMDcGCCsGAQUFBzAChitodHRwOi8vdHMtYWlhLndzLnN5bWFudGVjLmNv
+bS90c3MtY2EtZzIuY2VyMDwGA1UdHwQ1MDMwMaAvoC2GK2h0dHA6Ly90cy1jcmwu
+d3Muc3ltYW50ZWMuY29tL3Rzcy1jYS1nMi5jcmwwKAYDVR0RBCEwH6QdMBsxGTAX
+BgNVBAMTEFRpbWVTdGFtcC0yMDQ4LTIwHQYDVR0OBBYEFEbGaaMOShQe1UzaUmMX
+P142vA3mMB8GA1UdIwQYMBaAFF+a9W5czMx0mtTdfe8/2+xMgC7dMA0GCSqGSIb3
+DQEBBQUAA4IBAQB4O7SRKgBM8I9iMDd4o4QnB28Yst4l3KDUlAOqhk4ln5pAAxzd
+zuN5yyFoBtq2MrRtv/QsJmMz5ElkbQ3mw2cO9wWkNWx8iRbG6bLfsundIMZxD82V
+dNy2XN69Nx9DeOZ4tc0oBCCjqvFLxIgpkQ6A0RH83Vx2bk9eDkVGQW4NsOo4mrE6
+2glxEPwcebSAe6xp9P2ctgwWK/F/Wwk9m1viFsoTgW0ALjgNqCmPLOGy9FqpAa8V
+nCwvSRvbIrvD/niUUcOGsYKIXfA9tFGheTMrLnu53CAJE3Hrahlbz+ilMFcsiUk/
+uc9/yb8+ImhjU5q9aXSsxR08f5Lgw7wc2AR1MYIB+DCCAfQCAQEwcjBeMQswCQYD
+VQQGEwJVUzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24xMDAuBgNVBAMT
+J1N5bWFudGVjIFRpbWUgU3RhbXBpbmcgU2VydmljZXMgQ0EgLSBHMgIQDs/0OMj+
+vzVuBNhqmBsaUDAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEH
+ATAcBgkqhkiG9w0BCQUxDxcNMTQwOTIyMDAzMDM1WjAjBgkqhkiG9w0BCQQxFgQU
+uoVw+0Wqe4nmlvCVX3EHxI5b44AwDQYJKoZIhvcNAQEBBQAEggEAP45ETMXSdfob
+CydLxlsj1lBKH3cXa3l+em1qnT+H4OcLGtarxe+Dvv9aaidpk9VKZZuc9n5s7HWa
+asIy9UAddS6juM76q52GRrkBPX8k5nFqLH7YwVyDZckq7xn41v9kaPj3vqKvcxsm
+QOzDfHeAaB549H6HmLX5uSxV+vzVJJWvPK6bQuERIwKpmLqk9ouXRjBYt3DuXUKK
+N/FzhPfjBDp7TJTxcj9lPddMCcmqPgwc5mhrgsG4lyWbV7z4IsRb2+V1rdAio6nL
+XTnjvNBV9pNj9FW1img3i3VM02UB3Of4Euhk5Rb1+I5SkQ1QxzlJqVjzkls6eL3X
+IjgtIV80Lw==
+</as:Timestamp></Object></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

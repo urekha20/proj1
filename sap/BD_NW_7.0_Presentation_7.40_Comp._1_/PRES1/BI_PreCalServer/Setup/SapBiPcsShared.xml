@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SapSetup Context="Init">
+    <Product Guid="{D867D679-1F9F-4A0A-ACC8-35777455D629}" Name="SAP BiPcs Shared" CmdLine="BiPcs_Shared" WkstaDb="SapBiPcsWksta.xml" ProdVersion="6" Visible="FALSE"/>
+    <Component Guid="{D8889911-E100-4957-959C-A3CEC6A2E3D7}" Name="$SAP BiPcs ARP" Version="2" Min_Compliant_Version="1">
+        <Action Type="Registry" Dst="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\SAP_BiPcs">
+            <RegValue Name="DisplayName">SAP BW Precalculation Service</RegValue>
+            <RegValue Name="DisplayIcon">"%SapBiPcsDestDir%\BI_Prec\BExPreCalcWindowsService.exe",0</RegValue>
+            <RegValue Name="Publisher">SAP AG</RegValue>
+            <RegValue Name="URLUpdateInfo">http://service.sap.com</RegValue>
+            <RegValue Name="UninstallString">"%SAPSetupDir%\setup\NwSapSetup.exe" /product:"BiPcs" /uninstall</RegValue>
+        </Action>
+    </Component>
+    <Component Guid="{454CD65C-CD3D-47B0-A21B-452015C9CA36}" Name="$SAP BiPcs Shared Keys" Version="2" Min_Compliant_Version="1">
+        <Action Type="Registry" Dst="HKLM\SOFTWARE\SAP\SAP Shared\SAP_BiPcs">
+            <RegValue>SAP BiPcs</RegValue>
+            <RegValue Name="SAPSourceDir">%SAPSrcDir%</RegValue>
+            <RegValue Name="SAPDestDir">%SapBiPcsDestDir%</RegValue>
+        </Action>
+    </Component>
+    <Component Guid="{C1184358-918B-456E-8FA5-4DBD2203A2DD}" Name="$SAP BiPcs Files" Version="7" Min_Compliant_Version="1" Size="100" SysSize="100">        
+        <Action Type="File" Dst="%SapBiPcsDestDir%\BI_Prec">
+            <Src>%SAPsrcDir%\BI_Prec\BExAnalyzer.xla</Src>
+            <Src>%SAPsrcDir%\BI_Prec\BExPreCalcInstance.dll</Src>
+            <Src>%SAPsrcDir%\BI_Prec\BExPreCalcRfcServer.dll</Src>
+            <Src>%SAPsrcDir%\BI_Prec\BExPreCalcWindowsService.exe</Src>
+            <Src>%SAPsrcDir%\BI_Prec\BExPreCalcWindowsServiceMulti.exe</Src>
+            <Src>%SAPsrcDir%\BI_Prec\BExPrecalcWorker.exe</Src>
+            <Src>%SAPsrcDir%\BI_Prec\BExPrecConsoleDispatcher.exe</Src>
+            <Src>%SAPsrcDir%\BI_Prec\BExPrecConsoleWrapper.exe</Src>
+            <Src>%SAPsrcDir%\BI_Prec\SAP.Connector.dll</Src>
+            <Src>%SAPsrcDir%\BI_Prec\SAP.Connector.Rfc.dll</Src>
+            <Src>%SAPsrcDir%\BI_Prec\sapbexp.xla</Src>
+                </Action>
+        <Action Type="NtService" Dst="%SapBiPcsDestDir%\BI_Prec" ExeName="%SapBiPcsDestDir%\BI_Prec\BExPreCalcWindowsServiceMulti.exe" ServiceName="SAP BW Precalculation Service Multi Instance" DisplayName="SAP BW Precalculation Service Multi Instance" Description="" StartType="SERVICE_DEMAND_START">
+            <Src>%SAPsrcDir%\BI_Prec\BExPreCalcWindowsServiceMulti.exe</Src>
+        </Action>
+        <Action Type="NtService" Dst="%SapBiPcsDestDir%\BI_Prec" ExeName="%SapBiPcsDestDir%\BI_Prec\BExPreCalcWindowsService.exe" ServiceName="SAP BW Precalculation Service" DisplayName="SAP BW Precalculation Service" Description="" StartType="SERVICE_DEMAND_START">
+            <Src>%SAPsrcDir%\BI_Prec\BExPreCalcWindowsService.exe</Src>
+        </Action>
+    </Component>
+</SapSetup>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SapSetup Context="Init">
+    <Product Guid="{EB645960-713B-425C-A926-61EB2A14EFD4}" Name="SapBiPcsProductName" Condition="%SapBiPcsDestDir%&lt;&gt;C:\UNDEFINED &amp; %Pre_BiPcs%=FULFILLED" ConditionFailureText="SapBiPcsFailedCondition" Description="SapBiPcsProductDescription" CmdLine="BiPcs" WkstaDb="SapBiPcsWkstaUI.xml" ProdVersion="6">
+        <UI>
+            <Page Type="FolderPath">
+                <PageVariable>SapBiPcsDestDir</PageVariable>
+                <WindowCaption>StrWindowCaption</WindowCaption>
+                <Title>SapBiPcsProductName</Title>
+                <SubTitle>SapBiPcsDestDirPrompt</SubTitle>
+                <BackBtnText>StrBtnBack</BackBtnText>
+                <NextBtnText>StrBtnNext</NextBtnText>
+                <CancelBtnText>StrBtnCancel</CancelBtnText>
+            </Page>
+        </UI>
+        <Contains Guid="{00B8783A-F470-4FEE-9D15-2EE75241E58E}" Name="BiPcs" Description="BiPcs" Visible="FALSE"/>
+    </Product>
+    <Component Guid="{00B8783A-F470-4FEE-9D15-2EE75241E58E}" Name="BiPcs" Version="2">
+        <Requires Guid="{D8889911-E100-4957-959C-A3CEC6A2E3D7}" Name="$SAP BiPcs ARP"/>
+        <Requires Guid="{454CD65C-CD3D-47B0-A21B-452015C9CA36}" Name="$SAP BiPcs Shared Keys"/>
+        <Requires Guid="{C1184358-918B-456E-8FA5-4DBD2203A2DD}" Name="$SAP BiPcs Files"/>
+    </Component>
+</SapSetup>
